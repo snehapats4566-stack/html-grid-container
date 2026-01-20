@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin-left: 20px; 
+}
+
+.box {
+    padding: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    border-radius: 12px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Pastel Colors */
+.box:nth-child(1) { background-color: #ffd6d6; }
+.box:nth-child(2) { background-color: #d6eaff; }
+.box:nth-child(3) { background-color: #fff3cd; }
+.box:nth-child(4) { background-color: #e6d6ff; }
+.box:nth-child(5) { background-color: #d6fff2; }

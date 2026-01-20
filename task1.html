@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 1</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+<h2>Grid Container</h2>
+
+<div class="container">
+    <div class="box">
+        <b>1. Normal div vs Grid container</b><br><br>
+        A normal div (block-level element) stacks its child elements vertically, one on top of another. A grid container, when you add display: grid, creates a two-dimensional layout system where child elements can be arranged in both rows and columns. The grid container establishes a formatting context for its children to be positioned using grid properties.
+    </div>
+
+    <div class="box">
+        <b>2. Why layout looks same after applying Grid?</b><br><br>
+        When you only add display: grid without defining any columns or rows using grid-template-columns or grid-template-rows, CSS Grid uses an implicit behavior. The items are placed in a single column by default (like a normal block layout), which makes it look the same. Grid doesn't automatically create visible columns or rows unless you explicitly define them.
+    </div>
+
+    <div class="box">
+        <b>3. Are grid items created automatically?</b><br><br>
+        No, grid items are NOT created automatically. The items that become grid items are the direct children of the grid container. These are the existing HTML elements (like divs) that you already have in your markup. Grid simply provides a layout system for these existing elements - it doesn't create new elements for you. You must provide the child elements in your HTML.
+    </div>
+
+    <div class="box">
+        <b>4. Can Grid work without rows or columns?</b><br><br>
+        Yes, Grid can work without explicitly defining rows or columns. If you only use display: grid without grid-template-columns or grid-template-rows, the items will still behave as grid items but they'll be placed in a single implicit column. However, to see the actual grid layout with multiple columns, you need to define grid-template-columns (or grid-template-rows for multiple rows).
+    </div>
+
+    <div class="box">
+        <b>5. What does Grid need to show visible change?</b><br><br>
+        To see a visible change from a normal div layout to a grid layout, you need to: Apply display: grid to the container, Define grid-template-columns to create multiple columns (or grid-template-rows for multiple rows), Optionally add gap to see spacing between grid items. Without these definitions, the grid will still look like a normal stacked layout because Grid uses implicit rows when you don't specify explicit ones.
+    </div>
+
+</div>
+
+</body>
+</html>

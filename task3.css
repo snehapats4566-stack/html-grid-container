@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: rgb(81, 198, 174);
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* Fixed-width columns */
+.fixed {
+    grid-template-columns: 200px 200px 200px;
+}
+
+/* Flexible columns */
+.flexible {
+    grid-template-columns: 1fr 1fr 1fr;
+}

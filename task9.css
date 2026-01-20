@@ -1,0 +1,53 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f7f8fa;
+    padding: 35px;
+    color: #1e1e1e;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    font-weight: 650;
+}
+
+/* 12-column industry grid */
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+/* spanning classes */
+.col-6 { grid-column: span 6; }
+.col-4 { grid-column: span 4; }
+.col-3 { grid-column: span 3; }
+
+/* premium boxes */
+.box {
+    background: #96e9ea;
+    border-radius: 10px;
+    border: 1.4px solid #103877;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Q&A layout */
+.qa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.qa {
+    background: #71d873;
+    border: 1.3px solid #041c40;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.05);
+}
